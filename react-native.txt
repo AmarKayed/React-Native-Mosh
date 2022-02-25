@@ -13,4 +13,40 @@ What is React Native?
             Java
             Kotlin
     
+
+    Apps that are built with React-Native:
+        - Facebook
+        - Instagram
+        - Pintrest
+        - Skype
+        - UberEats
+
+
+Building a React Native App:
+    - Expo CLI
+    - React Native CLI
+
+    Expo is better for when we donot have any experience in Mobile Development.
+
+    With Expo we only have Javascript code, we will not have subfolders for android or ios specifically in our project.
+
+    This means that we cannot work directly with the Native APIs of these platforms, we can only work with what Expo gives us.
+
+
+Setting up the enviroment:
+    We need node version 12 or higher
+        node -v
     
+    Installing Expo CLI globally:
+        npm i -g expo-cli
+
+    We should also install Expo Client mobile app on our phone so we can run the app directly on our phone.
+
+    VSC Extensions:
+        React Native Tools by Microsoft
+        React Native/React/Redux snippets by EQuimper
+        Prettier - Code formatter by Esben Petersen
+        Material Icon Theme
+        
+
+
