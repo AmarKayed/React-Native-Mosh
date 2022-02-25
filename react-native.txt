@@ -47,6 +47,32 @@ Setting up the enviroment:
         React Native/React/Redux snippets by EQuimper
         Prettier - Code formatter by Esben Petersen
         Material Icon Theme
-        
+
+
+Setup Console Commands:
+    expo init ProjectName
+
+    Choose blank template for pur Javascript template
+
+    The project folder must be empty in order for this to work, 
+    if we choose to create the project's folder before running
+    expo init .
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
