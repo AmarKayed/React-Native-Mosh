@@ -59,10 +59,22 @@ Setup Console Commands:
     expo init .
 
 
-    
+The <View> component is like a <div> in the web world.
+The <Text> component is used to display text on the screen.
+
+React Native uses function components.
 
 
+Run the React Native app:
+    npm start
 
+    This will open a website with Metro Bundler on it, thus we can view our mobile app from our computer.
+    We can also scan the QR code provided in our console in order to use it on our phone.
+
+    In the terminal, we are also provided with keyboard shortcuts to choose on which platform we want to
+    run our mobile app.
+
+    We are also provided with the logs of our app, this will be helpful to test our application.
 
 
 
