@@ -1,0 +1,16 @@
+What is React Native?
+    React Native is a framework for building native apps for Android or IOS using Javascript.
+
+    Native App == It's not a Web App that looks like a Mobile App, instead it's a fully fledged Mobile Application.
+
+    We can write the code once in React Native and it will be available on IOS and Android.
+
+    Web Apps Languages:
+        - For IOS:
+            Swift
+            Objective-C
+        - For Android:
+            Java
+            Kotlin
+    
+    
