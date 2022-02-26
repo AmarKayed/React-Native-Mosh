@@ -331,32 +331,32 @@ Platform-Specific Code:
     We verify if the platform is Android, if yes then we simply add the 
     height of the Status Bar as the padding of the top.
 
+
+
+Layout:
+    We can get the dimensions of the screen by importing Dimensions
+    and using:
+        Dimensions.get('screen')
+
+    We can use Ctrl + Left/Right Arrow Key to change the orientation of the phone.
+    We can use Ctrl + Up/Down Arrow Key to change the zoom of our phone.
+
+    If we want our phone to support orientation, we go to app.json
+    and change the "orientation" property to "default"
+
+
+    To detect app orientation we use the hooks library
+    developed by the react-native-community:
+        https://github.com/react-native-community/hooks
     
+    to install this library we use:
+        npm i @react-native-community/hooks
+    
+    Unlike the built-in React Native Dimensions API, the useDimensions
+    Hook from the react-native-community library provides us with updated
+    current Dimensions of the screen based on the orientation of the phone.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        => useDimensions is better than Dimensions
 
 
 
