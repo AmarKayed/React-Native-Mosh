@@ -289,9 +289,30 @@ Button:
     Alert.prompt ONLY WORKS FOR IOS
 
 
+StyleSheets:
+    In React Native, there is no CSS.
+    Instead, we use JS objects with properties similar to the ones existing in CSS.
+
+    Furthermore, we use StyleSheet.create() in order to validate the properties
+    of our styles obiect.
+
+    To simulate adding more style classes to an element in HTML, we can also
+    assign multiple style objects to a component in React Native by simply
+    providing an array of style objects to the style prop of the respective object.
+
+    Example:
+        <View style = {[styleObiect1, styleObiect2, styleObiect3]}></View>
+
+    The object on the right will overwrite the object on the left, exactly like
+    how CSS classes that are written farther down the code will overwrite the classes
+    written at the start of the code.
+
+    We can write the style objects in another file if we choose to and import them in the
+    component's file, but it's a common practice to write the styles below the component
+    definition in the same file, since we're going to work with both the component AND its
+    styles at the same time.
 
 
-    
 
 
 
