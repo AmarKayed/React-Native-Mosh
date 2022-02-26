@@ -105,7 +105,7 @@ Running the React Native app on Android:
 
 
     Bringing Developer Menu in our AVD:
-        Ctrl + N
+        Ctrl + M
 
 
 
@@ -116,6 +116,102 @@ Running the React Native app on a physical device:
     1. Install Expo on the phone
     2. Have the phone connected to the same Wireless Network as the laptop.
     3. Scan the QR provided in the console or in Metro Bundler
+
+    We can bring the Developer Menu on our Physical Device by shaking it.
+
+
+
+Debug + Logging the React Native App:
+    using console.log()
+    Every console.log() that we use will be executed by the number of devices we are running on.
+    If we use console.log("Something"); and we're running our app on an IOS emulator and an
+    Android emulator, then "Something" will be printed twice in our VSC console.
+
+    We can see our connected devices in Metro Bundler on the top left corner.
+
+    The console.log() is good for debugging but it can have a negative performance on our
+    app. Therefore, we should use console.log() during development only, not when we ship
+    our app for production.
+        => We should remove our console.log()'s before building our app for production
+
+
+Debugging in Chrome:
+
+    We can bring the Developer Menu on our Physical Device by shaking it.
+
+    To dismiss an error screen on our AVD we press the Esc key.
+
+    Bring up the Developer Menu on AVD:
+        Ctrl + M
+
+    Enable Remote JS Debugging in Chrome.
+
+    This will slow down our app, but it will allow us to run the JS of our app in chrome.
+
+    To Debug the JS of our app, we go to Developer Tools > Sources > Pause on Exceptions( || button on the right)
+
+
+I should revise the section of debugging.
+
+    After finishing the debugging, we should Disable Remote JS from our AVD.
+
+    Unlike in Web Development, in React Native App Development we cannot 
+    select a JSX component and inspect its styles.
+
+
+Debugging in VSCode:
+
+    We have to install the React Native Tools extension by Microsoft.
+
+    We go to the debug section of our Activity Bar in VSC.
+
+    We have to create a launch.json file. 
+    We select React Native.
+    We select Attach to packager.
+
+    This will create the launch.json file in our .vscode folder in our project.
+
+I should revise the section of debugging.
+
+
+
+
+Publishing:
+    So far we've hosted our app on localhost via Expo Client.
+    This means that if we turn off our laptop, the app will no longer be available to us.
+
+    We can publish our app to expo, thus we can have a public host, it's much easier than going through app stores.
+
+    This is purely for development and testing. For production we MUST go through app stores.
+
+    We can publish via Metro Bundler through the "Publish or republish project..." option.
+
+    Or we can use the terminal and use:
+        expo publish
+
+    Either way, we're going to be asked a couple of questions.
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
