@@ -40,7 +40,7 @@ Setting up the enviroment:
     Installing Expo CLI globally:
         npm i -g expo-cli
 
-    We should also install Expo Client mobile app on our phone so we can run the app directly on our phone.
+    We should also install Expo Client/Expo mobile app on our phone so we can run the app directly on our phone.
 
     VSC Extensions:
         React Native Tools by Microsoft
@@ -75,6 +75,57 @@ Run the React Native app:
     run our mobile app.
 
     We are also provided with the logs of our app, this will be helpful to test our application.
+
+
+Running the React Native app on Android:
+    Download Android Studio:
+        https://developer.android.com/studio
+
+    Go with Standard Installation
+
+    After installation, go to:
+        Configure > AVD Managar > Create Virtual Device
+    
+    AVD Stands for "Android Virtual Device"
+
+    We can choose any phone we want, usually it's best to have
+    a phone that already has Play Store installed, such as Pixel 3a.
+
+    For the System Image, we can select the latest stable version, which is
+    oftenly the second option(Q).
+
+    After the installation of the image system, we can give our
+    AVD a name if we choose to.
+
+    After clicking next and finishing the installation, we can run our AVD.
+
+    Now to finally run our React Native app, we can either:
+        Press a in our VSC terminal console
+        Go to Metro Bundler and select "Run on ANdroid device/emulator"
+
+
+    Bringing Developer Menu in our AVD:
+        Ctrl + N
+
+
+
+
+
+Running the React Native app on a physical device:
+
+    1. Install Expo on the phone
+    2. Have the phone connected to the same Wireless Network as the laptop.
+    3. Scan the QR provided in the console or in Metro Bundler
+
+
+
+
+
+
+
+
+
+
 
 
 
