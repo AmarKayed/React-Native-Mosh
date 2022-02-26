@@ -189,9 +189,58 @@ Publishing:
     Or we can use the terminal and use:
         expo publish
 
-    Either way, we're going to be asked a couple of questions.
+    Either way, we're going to be asked a couple of questions in the terminal.
 
-    
+    We will have to create an Expo Account.
+
+    After publishing our app, we will get our very own link for the app.
+
+    On that link, we will see a QR code which we can scan in order to open our app.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fundamental Concepts of React Native:
+    - View
+    - Text
+    - Image
+    - Button
+    - Touchables
+    - Alert
+
+    In React Native we donot have html elements.
+    We also donot have any CSS. Instead, we use the style prop of the components in
+    order to pass in JS components which have CSS properties.
+
+    The equivalent of a <div> is a <View>
+
+
+    <SafeAreaView> is a <View> that ensures that everything is display under the iPhone X's top knotch.
+
+
+    <Text> is equivalent to a <p> tag
+
+    if the test is really long, we can set the numberOfLines={1} prop to display it on a single ling.
+    We can make the text look like a link using onPress={() => console.log("Text clicked")}
+
+
+
+
 
 
 
