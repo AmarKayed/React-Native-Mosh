@@ -279,6 +279,19 @@ Fundamental Concepts of React Native:
     We also have an Android Specific Touchable: <TouchableNativeFeedback>
 
 
+Button:
+    <Button title = "Click Me" onPress = {() => {Alert.alert("Button Pressed", "My message", [
+        {text: "Yes", onPress: () => console.log("Yes!")},
+        {text: "No", onPress: () => console.log("No!")},
+    ])}}></Button>
+
+
+    Alert.prompt ONLY WORKS FOR IOS
+
+
+
+
+    
 
 
 
