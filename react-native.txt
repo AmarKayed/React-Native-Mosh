@@ -235,18 +235,37 @@ Fundamental Concepts of React Native:
 
     <Text> is equivalent to a <p> tag
 
-    if the test is really long, we can set the numberOfLines={1} prop to display it on a single ling.
+    If the test is really long, we can set the numberOfLines={1} prop to display it on a single ling.
     We can make the text look like a link using onPress={() => console.log("Text clicked")}
 
+    <Image source = {require('./assets/icon.png')}/>
+
+    require() returns the reference number of our picture
+
+    We can also go to:
+        https://picsum.photos/
+    to get a random photo from the internet
+
+    For Network images we must also provide the size, for local images we don't have to do that.
+
+    Example:
+      <Image 
+      blurRadius={10}
+      fadeDuration = {1000}
+      source = {{
+        width: 200,
+        height: 300,
+        uri: 'https://picsum.photos/200/300'}} />
 
 
+    The default fadeEffect duration is 300ms
+    fadeDuration ONLY WORKS ON ANDROID, it has no effect on IOS.
+    We also have resizeMode which works exactly like in CSS to resize the image.
 
 
+    By default, the <Image /> component doesn't have an onPress prop.
 
-
-
-
-
+    
 
 
 
