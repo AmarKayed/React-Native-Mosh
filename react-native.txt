@@ -265,8 +265,18 @@ Fundamental Concepts of React Native:
 
     By default, the <Image /> component doesn't have an onPress prop.
 
-    
+    To make the image touchable, we import the <TouchableWithoutFeedback> component.
 
+    The <TouchableWithoutFeedback> component has props such as:
+        onPress, onLongPress, etc.
+
+    We can also use <TouchableOpacity> if we want to reduce the opacity for 1s after tapping the component.
+
+    We also have <TouchableHighlight>
+
+    <TouchableWithoutFeedback>, <TouchableOpacity>, <TouchableHighlight> are CROSS-PLATFORM
+
+    We also have an Android Specific Touchable: <TouchableNativeFeedback>
 
 
 
