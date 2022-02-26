@@ -66,7 +66,7 @@
 // });
 
 
-import { StatusBar } from 'expo-status-bar';
+// import { StatusBar } from 'expo-status-bar';
 import {
   StyleSheet,
   Text,
@@ -79,6 +79,8 @@ import {
   SafeAreaView, 
   TouchableNativeFeedback,
   Alert,
+  Platform,
+  StatusBar
 
 } from 'react-native';
 
@@ -104,10 +106,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'lightblue',
-    alignItems: 'center',
-    justifyContent: 'center',
-    justifyContent: 'center',
-    alignItems: 'center'
+    // alignItems: 'center',
+    // justifyContent: 'center',
+    // justifyContent: 'center',
+    // alignItems: 'center',
+
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0
   },
 });
 

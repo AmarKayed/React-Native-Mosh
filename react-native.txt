@@ -314,6 +314,25 @@ StyleSheets:
 
 
 
+Platform-Specific Code:
+    <SafeAreaView> is only available for IOS, not for Android.
+
+    We need to import Platform. This will allow us to dynamically set 
+    StyleSheet properties based on the platform that the app is running on.
+
+    Platform.OS provides us with many details about the platform.
+
+    StatusBar provides us with details about the phone's statusbar.
+
+    Example:
+    We want to add a paddingTop for all the Android phones:
+        paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0
+
+    We verify if the platform is Android, if yes then we simply add the 
+    height of the Status Bar as the padding of the top.
+
+    
+
 
 
 
