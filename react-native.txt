@@ -360,9 +360,47 @@ Layout:
 
 
 
+Flexbox:
+    Flexbox in React Native is a little bit different from the one in CSS.
+    
+    flex: 1 will make our component take up the whole screen
+    flex: 0.5 will make it take up only half of the screen
 
 
+    If we have multiple children inside of a parent component and set the flex to 1
+    for each of the children, the ammount of screen space taken by the parent will
+    be divided equally among the children.
+
+    if we set the flex of the first child element to 2, and the flex of the other
+    two child elements to 1, then the first child will be twice as big as
+    the other two, because we have divided the space of the parent element to
+    2 + 1 + 1 == 4 segments.
+
+    The same is true if we set the flex of the first child element to 100 and the
+    other two to 1, then there will be 102 segments, 100 of which are taken by
+    the first element.
+
+    In the Web world, by default elements are layed out horizontally.
+    In the App world, by default elements are layed out vertically.
+
+    To lay out the child elements horizontally, we use flexDirection: 'row' on
+    the parent element.
 
 
+    If we ever need to view the options of an instruction, we can use:
+        Ctrl + Space
+
+    Primary Axis == horizontal axis
+    Cross Axis == vertical axis
+
+    Aligning items in React Native is the same as in CSS via alignItems and justifyContent.
+
+    Remember: alignItems: 'baseline'
+
+    If we use flexWrap, then alignItems will not work anymore,
+    instead we MUST use alignContent.
+
+    If we donot have wrapping enables, then alignContent will have no effect.    
 
 
+    

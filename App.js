@@ -1,36 +1,54 @@
-import React from "react";
-import {
-    Dimensions,
-    StyleSheet,
-    SafeAreaView,
-    StatusBar,
-    Platform,
-    View
-} from "react-native";
-
-// import { useDimensions, useDeviceOrientation } from "@react-native-community/hooks";
+import React from 'react';
+import { View } from "react-native";
 
 export default App = () => {
 
-    // console.log(Dimensions.get('screen'));
-    // console.log(useDimensions());
-
     return (
-        <SafeAreaView style = {styles.container}>
-            <View style = {{
-                backgroundColor: 'dodgerblue',
-                width: '100%',
-                height: '30%',
-            }}></View>
-        </SafeAreaView>
-    )
-}
+        <View
+            style = {{
+                backgroundColor: 'white',
+                flex: 1,
+                flexDirection: 'row',
+                // flexDirection: 'row-reverse',
+                // flexDirection: 'column-reverse',
+                justifyContent: 'center',
+                alignItems: 'center',
+                flexWrap: 'wrap',
+                alignContent: 'center',
+                
+            }}>
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "lightblue",
-        paddingTop: Platform.OS === "android"? StatusBar.currentHeight : 0,
-    
-    }
-})
+                <View style = {{
+                    backgroundColor: 'dodgerblue',
+                    // flex: 10,
+                    width: 100,
+                    height: 100,
+                }}/>
+                <View style = {{
+                    backgroundColor: 'gold',
+                    // flex: 1,
+                    width: 100,
+                    height: 100,
+                }}/>
+                <View style = {{
+                    backgroundColor: 'tomato',
+                    // flex: 1,
+                    width: 100,
+                    height: 100,
+                }}/>
+                <View style = {{
+                    backgroundColor: 'grey',
+                    // flex: 1,
+                    width: 100,
+                    height: 100,
+                }}/>
+                <View style = {{
+                    backgroundColor: 'greenyellow',
+                    // flex: 1,
+                    width: 100,
+                    height: 100,
+                }}/>
+
+            </View>
+    );
+}
