@@ -403,4 +403,8 @@ Flexbox:
     If we donot have wrapping enables, then alignContent will have no effect.    
 
 
+Positioning:
+    In React Native, by default every element has the position style property set to 'relative'.
+    Everything else works exactly the same as in CSS.
+
     
